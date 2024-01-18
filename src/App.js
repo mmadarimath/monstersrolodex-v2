@@ -16,7 +16,7 @@ const App = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((users) => setMonsters(users));
-  }, []);
+  }, []); 
 
   useEffect(() => {
     const newFilteredMonsters = monsters.filter((monster) => {
